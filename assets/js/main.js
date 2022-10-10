@@ -14,20 +14,32 @@ La condizione non funziona? controlliamo il loro ordine.*/
 
 //alert('ciao')
 
+//TIPS
+//per dividere un numero potrei usare % con la condizione if
+
 //Scrivi un programma che stampi in console i numeri da 1 a 100
 //comincio realizzando il loop col ciclo for
-for (i = 1; i <= 100; i++) {
-    console.log(i);
+for (let i = 1; i <= 100; i++) {
+    //console.log(i);
+
+    if (i % 3 == 0) {
+        //Se il numero di quelli stampati è divisibile per 3 stampa “Fizz” al posto del numero
+        //il numero divisibile per 3 deve dare come resto 0
+        console.log('Fizz');
+    } else if (i % 5 == 0) {
+        //Se il numero di quelli stampati è divisibile per 5 stampa “Buzz” al posto del numero
+        //il numero divisibile per 5 deve dare come resto 0
+        console.log('Buzz');
+    } else {
+        //Se il numero di quelli stampati è sia multiplo di 3 che di 5 stampi “FizzBuzz”.
+        console.log(i);
+    }
 }
 
 
-//Se il numero di quelli stampati è divisibile per 3 stampa “Fizz” al posto del numero
-//il numero divisibile per 3 deve dare come resto 0
 
-//Se il numero di quelli stampati è divisibile per 5 stampa “Buzz” al posto del numero
-//il numero divisibile per 5 deve dare come resto 0
 
-//Se il numero di quelli stampati è sia multiplo di 3 che di 5 stampi “FizzBuzz”.
 
-//TIPS
-//per dividere un numero potrei usare % con la condizione if
+
+
+
