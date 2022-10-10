@@ -39,7 +39,7 @@ for (let i = 1; i <= 100; i++) {
     //console.log(bodyEl);
     /* /BONUS1 */
 
-    if ((i % 5 == 0) & (i % 3 == 0)) {
+    if ((i % 5 == 0) && (i % 3 == 0)) {
         //Se il numero di quelli stampati è sia multiplo di 3 che di 5 stampi “FizzBuzz”.
         console.log('FizzBuzz');
         pEl.append('fizz/buzz');//BONUS1
