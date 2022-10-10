@@ -27,13 +27,13 @@ for (let i = 1; i <= 100; i++) {
 
     /* BONUS1 */
     //catturo l'elemento body del DOM nella variabile bodyEl
-    const bodyEl = document.querySelector('body');
+    const numberBoxEl = document.querySelector('.number_box');
     //creo un elemento container nel DOM attraverso il metodo createElement
     const containerEl = document.createElement('div.container');
     //console.log(containerEl);
     const pEl = document.createElement('p');
 
-    bodyEl.append(containerEl);
+    numberBoxEl.append(containerEl);
     //aggiungo al DOM un p che mostri il numero/scritta, utilizzando append
     containerEl.append(pEl);
     //console.log(bodyEl);
