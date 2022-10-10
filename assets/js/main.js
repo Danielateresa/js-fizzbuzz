@@ -34,9 +34,27 @@ for (let i = 1; i <= 100; i++) {
         //il numero divisibile per 5 deve dare come resto 0
         console.log('Buzz');
     } else {
+        //stampo i restanti numeri normalmente
         console.log(i);
     }
+
 }
+/* BONUS 1:
+    Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare. */
+
+//catturo l'elemento body del DOM nella variabile bodyEl
+const bodyEl = document.querySelector('body');
+//creo un elemento container nel DOM attraverso il metodo createElement
+const containerEl = document.createElement('div.container');
+console.log(containerEl);
+bodyEl.append(containerEl);
+//aggiungo al DOM un p che mostri il numero/scritta, utilizzando append
+
+pEl = document.createElement('p');
+containerEl.append(pEl);
+console.log(bodyEl);
+
+
 
 
 
