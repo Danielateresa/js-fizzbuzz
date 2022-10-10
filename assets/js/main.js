@@ -22,7 +22,10 @@ La condizione non funziona? controlliamo il loro ordine.*/
 for (let i = 1; i <= 100; i++) {
     //console.log(i);
 
-    if (i % 3 == 0) {
+    if ((i % 5 == 0) & (i % 3 == 0)) {
+        //Se il numero di quelli stampati è sia multiplo di 3 che di 5 stampi “FizzBuzz”.
+        console.log('FizzBuzz');
+    } else if (i % 3 == 0) {
         //Se il numero di quelli stampati è divisibile per 3 stampa “Fizz” al posto del numero
         //il numero divisibile per 3 deve dare come resto 0
         console.log('Fizz');
@@ -31,7 +34,6 @@ for (let i = 1; i <= 100; i++) {
         //il numero divisibile per 5 deve dare come resto 0
         console.log('Buzz');
     } else {
-        //Se il numero di quelli stampati è sia multiplo di 3 che di 5 stampi “FizzBuzz”.
         console.log(i);
     }
 }
