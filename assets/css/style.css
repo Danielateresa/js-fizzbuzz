@@ -5,7 +5,29 @@ body {
     font-weight: bold;
 }
 
+.number_box {
+    max-width: 900px;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 h1 {
+    margin-top: 5rem;
     text-align: center;
+}
+
+container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    aspect-ratio: 1/1;
+    margin: 0.5rem;
+
+}
+
+
+p {
+    margin: 0.5rem;
 }

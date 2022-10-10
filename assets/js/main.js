@@ -29,7 +29,7 @@ for (let i = 1; i <= 100; i++) {
     //catturo l'elemento body del DOM nella variabile bodyEl
     const numberBoxEl = document.querySelector('.number_box');
     //creo un elemento container nel DOM attraverso il metodo createElement
-    const containerEl = document.createElement('div.container');
+    const containerEl = document.createElement('container');
     //console.log(containerEl);
     const pEl = document.createElement('p');
 
@@ -43,23 +43,27 @@ for (let i = 1; i <= 100; i++) {
         //Se il numero di quelli stampati è sia multiplo di 3 che di 5 stampi “FizzBuzz”.
         console.log('FizzBuzz');
         pEl.append('fizz/buzz');//BONUS1
+        containerEl.style = 'background-color:green';//BONUS2
 
     } else if (i % 3 == 0) {
         //Se il numero di quelli stampati è divisibile per 3 stampa “Fizz” al posto del numero
         //il numero divisibile per 3 deve dare come resto 0
         console.log('Fizz');
         pEl.append('fizz');//BONUS1
+        containerEl.style = 'background-color:blue';//BONUS2
 
     } else if (i % 5 == 0) {
         //Se il numero di quelli stampati è divisibile per 5 stampa “Buzz” al posto del numero
         //il numero divisibile per 5 deve dare come resto 0
         console.log('Buzz');
         pEl.append('buzz');//BONUS1
+        containerEl.style = 'background-color:red';//BONUS2
 
     } else {
         //stampo i restanti numeri normalmente
         console.log(i);
         pEl.append(i);//BONUS1
+        containerEl.style = 'background-color:pink';//BONUS2
     }
 
 
