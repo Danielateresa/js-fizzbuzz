@@ -12,10 +12,13 @@ Scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 La condizione non funziona? controlliamo il loro ordine.*/
 
-alert('ciao')
+//alert('ciao')
 
 //Scrivi un programma che stampi in console i numeri da 1 a 100
 //comincio realizzando il loop col ciclo for
+for (i = 1; i <= 100; i++) {
+    console.log(i);
+}
 
 
 //Se il numero di quelli stampati è divisibile per 3 stampa “Fizz” al posto del numero
