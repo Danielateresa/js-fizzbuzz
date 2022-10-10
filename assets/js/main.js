@@ -11,6 +11,9 @@ Consigli del giorno:
 Scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 La condizione non funziona? controlliamo il loro ordine.*/
+/* BONUS 1:
+        Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare. */
+
 
 //alert('ciao')
 
@@ -22,37 +25,48 @@ La condizione non funziona? controlliamo il loro ordine.*/
 for (let i = 1; i <= 100; i++) {
     //console.log(i);
 
+    /* BONUS1 */
+    //catturo l'elemento body del DOM nella variabile bodyEl
+    const bodyEl = document.querySelector('body');
+    //creo un elemento container nel DOM attraverso il metodo createElement
+    const containerEl = document.createElement('div.container');
+    //console.log(containerEl);
+    const pEl = document.createElement('p');
+
+    bodyEl.append(containerEl);
+    //aggiungo al DOM un p che mostri il numero/scritta, utilizzando append
+    containerEl.append(pEl);
+    //console.log(bodyEl);
+    /* /BONUS1 */
+
     if ((i % 5 == 0) & (i % 3 == 0)) {
         //Se il numero di quelli stampati è sia multiplo di 3 che di 5 stampi “FizzBuzz”.
         console.log('FizzBuzz');
+        pEl.append('fizz/buzz');//BONUS1
+
     } else if (i % 3 == 0) {
         //Se il numero di quelli stampati è divisibile per 3 stampa “Fizz” al posto del numero
         //il numero divisibile per 3 deve dare come resto 0
         console.log('Fizz');
+        pEl.append('fizz');//BONUS1
+
     } else if (i % 5 == 0) {
         //Se il numero di quelli stampati è divisibile per 5 stampa “Buzz” al posto del numero
         //il numero divisibile per 5 deve dare come resto 0
         console.log('Buzz');
+        pEl.append('buzz');//BONUS1
+
     } else {
         //stampo i restanti numeri normalmente
         console.log(i);
+        pEl.append(i);//BONUS1
     }
 
+
+
+
 }
-/* BONUS 1:
-    Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare. */
 
-//catturo l'elemento body del DOM nella variabile bodyEl
-const bodyEl = document.querySelector('body');
-//creo un elemento container nel DOM attraverso il metodo createElement
-const containerEl = document.createElement('div.container');
-console.log(containerEl);
-bodyEl.append(containerEl);
-//aggiungo al DOM un p che mostri il numero/scritta, utilizzando append
-
-pEl = document.createElement('p');
-containerEl.append(pEl);
-console.log(bodyEl);
 
 
 
